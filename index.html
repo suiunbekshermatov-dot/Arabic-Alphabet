@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arabic Adventure Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>🌟 Arabic Adventure Kids</h1>
+      <p>Let’s learn more Arabic! ✨</p>
+    </div>
+    <div class="header-actions">
+      <button id="soundToggle" class="chip">🔊 Sound On</button>
+      <button id="dailyReward" class="chip">🎁 Daily Reward</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" aria-label="Main navigation">
+      <button class="nav-btn active" data-screen="home">🏠 Home</button>
+      <button class="nav-btn" data-screen="learn">📘 Learn Arabic</button>
+      <button class="nav-btn" data-screen="alphabet">🔤 Alphabet</button>
+      <button class="nav-btn" data-screen="vocabulary">🧩 Vocabulary</button>
+      <button class="nav-btn" data-screen="listening">🎧 Listening</button>
+      <button class="nav-btn" data-screen="memory">🧠 Memory Game</button>
+      <button class="nav-btn" data-screen="quiz">❓ Quiz / Trivia</button>
+      <button class="nav-btn" data-screen="puzzle">🧱 Puzzle</button>
+      <button class="nav-btn" data-screen="leaderboard">🏆 Leaderboard</button>
+      <button class="nav-btn" data-screen="progress">📈 Progress</button>
+      <button class="nav-btn" data-screen="dashboard">👩‍🏫 Parent Dashboard</button>
+    </aside>
+
+    <section class="content" id="screenContainer" aria-live="polite"></section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="assertive"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
